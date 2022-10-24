@@ -5,6 +5,10 @@ import TextField from "@material-ui/core/TextField";
 import img from "./../../imgs/titleFine.png"
 import MUIMenu from "./MUIMenu/MUIMenu";
 import Button from "@material-ui/core/Button";
+import PermIdentityIcon from '@material-ui/icons/PermIdentity';
+import BarChartIcon from '@material-ui/icons/BarChart';
+import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
+import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
 
 const Header = () => {
 
@@ -26,10 +30,26 @@ const Header = () => {
                         <TextField fullWidth id="outlined-basic" label="Outlined" variant="outlined" />
                     </div>
                     <div className={s.buttonsContainer}>
-                        <div className={s.button}><Button size="large">button1</Button></div>
-                        <div className={s.button}><Button size="large">button2</Button></div>
-                        <div className={s.button}><Button size="large">button3</Button></div>
-                        <div className={s.button}><Button size="large">button4</Button></div>
+                        <div className={s.button}>
+                            <Button size="large">
+                                <div className={s.buttonName}><PermIdentityIcon/><div>Профиль</div></div>
+                            </Button>
+                        </div>
+                        <div className={s.button}>
+                            <Button size="large">
+                                <div className={s.buttonName}><BarChartIcon/><div>Профиль</div></div>
+                            </Button>
+                        </div>
+                        <div className={s.button}>
+                            <Button size="large">
+                                <div className={s.buttonName}><FavoriteBorderIcon/><div>Профиль</div></div>
+                            </Button>
+                        </div>
+                        <div className={s.button}>
+                            <Button size="large">
+                                <div className={s.buttonName}><ShoppingCartOutlinedIcon/><div>Профиль</div></div>
+                            </Button>
+                        </div>
                     </div>
                 </div>
                 {Links.length > 0
@@ -40,7 +60,6 @@ const Header = () => {
                     )
                     : null
                 }
-
             </div>
         </div>
     );
