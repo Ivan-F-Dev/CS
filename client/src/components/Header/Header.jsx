@@ -1,44 +1,43 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import s from "./Header.module.scss"
 import HeaderLinks from "./HeaderLinks/HeaderLinks";
+import TextField from "@material-ui/core/TextField";
+import img from "./../../imgs/titleFine.png"
+import MUIMenu from "./MUIMenu/MUIMenu";
+import Button from "@material-ui/core/Button";
 
 const Header = () => {
 
-    //const Links = ['Link','Link','Link','Link','Link','Link']
-
     const [Links, setLinks] = useState(['Link','Link','Link','Link','Link','Link'])
-
-    const decreaseLinks = () => {
-        Links.pop()
-        setLinks([...Links])
-    }
-
-    useEffect(() => {
-        console.log(Links.length,Links)
-    },);
 
     return (
         <div className={s.Header}>
             <div className={s.mainContainer}>
                 <div className={s.topContainer}>
                     <div className={s.title_menuContainer}>
-                        <div className={s.title}>title</div>
-                        <div className={s.menu}>menu</div>
+                        <div className={s.title}>
+                            <img src={img} width="159" height="61" alt="lorem"/>
+                        </div>
+                        <div className={s.menu}>
+                            <MUIMenu/>
+                        </div>
                     </div>
-                    <div className={s.search}>search</div>
+                    <div className={s.search}>
+                        <TextField fullWidth id="outlined-basic" label="Outlined" variant="outlined" />
+                    </div>
                     <div className={s.buttonsContainer}>
-                        <div className={s.button}>button1</div>
-                        <div className={s.button}>button2</div>
-                        <div className={s.button}>button3</div>
-                        <div className={s.button}>button4</div>
+                        <div className={s.button}><Button size="large">button1</Button></div>
+                        <div className={s.button}><Button size="large">button2</Button></div>
+                        <div className={s.button}><Button size="large">button3</Button></div>
+                        <div className={s.button}><Button size="large">button4</Button></div>
                     </div>
                 </div>
-                <button onClick={decreaseLinks}>Decrease links</button>
                 {Links.length > 0
-                    ? (<div className={s.bottomContainer}>
-                        Links:
-                        <HeaderLinks linkList={Links}/>
-                    </div>)
+                    ? (
+                        <div className={s.bottomContainer}>
+                            <HeaderLinks linkList={Links}/>
+                        </div>
+                    )
                     : null
                 }
 

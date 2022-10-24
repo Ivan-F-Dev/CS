@@ -4,24 +4,42 @@
   .mainContainer {
 
     .topContainer {
+      display: flex;
+
 
       .title_menuContainer {
-
+        display: flex;
+        width: 20%;
         .title {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 50%;
 
+          img {
+
+          }
         }
         .menu {
-
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 50%;
         }
       }
       .search {
-
+        display: flex;
+        align-items: center;
+        width: 50%;
       }
 
       .buttonsContainer {
-
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 30%;
         .button {
-
+          width: 24%;
         }
       }
     }
