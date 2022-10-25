@@ -12,7 +12,7 @@ import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
 
 const Header = () => {
 
-    const [Links, setLinks] = useState(['Link','Link','Link','Link','Link','Link'])
+    const [Links, setLinks] = useState(['Смартфоны и планшеты','Ноутбуки, планшеты и компьютеры','Техника для дома','Игры и развлечения','Фото и видеотехника'])
 
     return (
         <div className={s.Header}>
@@ -20,14 +20,14 @@ const Header = () => {
                 <div className={s.topContainer}>
                     <div className={s.title_menuContainer}>
                         <div className={s.title}>
-                            <img src={img} width="159" height="61" alt="lorem"/>
+                            <img src={img} alt="lorem"/>
                         </div>
                         <div className={s.menu}>
                             <MUIMenu/>
                         </div>
                     </div>
                     <div className={s.search}>
-                        <TextField fullWidth id="outlined-basic" label="Outlined" variant="outlined" />
+                        <TextField fullWidth id="outlined-basic"  variant="outlined" />
                     </div>
                     <div className={s.buttonsContainer}>
                         <div className={s.button}>

@@ -1,6 +1,30 @@
 .links {
+  width: 96%;
   display: flex;
+  justify-content: space-between;
+
   .link {
 
+    padding: 10px 0 10px 0;
+    //padding-right: 20px;
+    &:hover {
+      color: #77bd1b;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .links {
+    .link {
+      font-size: 13px;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .links {
+    .link {
+      font-size: 10px;
+    }
   }
 }

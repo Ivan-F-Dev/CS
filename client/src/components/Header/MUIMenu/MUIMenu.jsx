@@ -1,20 +1,15 @@
 import React from "react";
+import s from "./MUIMenu.module.scss"
 import Button from "@material-ui/core/Button";
 import MenuItem from "@material-ui/core/MenuItem";
 import Menu from "@material-ui/core/Menu";
 import MenuIcon from '@material-ui/icons/Menu';
-import makeStyles from "@material-ui/core/styles/makeStyles";
+//import makeStyles from "@material-ui/core/styles/makeStyles";
 
 const MUIMenu = () => {
 
-    const useStyles = makeStyles({
-        root: {
-            color: 'white',
-            textTransform: 'none',
-            fontSize: '18px'
-        },
-    });
-    const classes = useStyles()
+    //const useStyles = makeStyles({root: {color: 'white', textTransform: 'none', fontSize: '18px'},});
+    // const classes = useStyles()
 
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
@@ -26,7 +21,7 @@ const MUIMenu = () => {
     };
 
     return (
-        <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+        <div className={s.container} style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
             <Button
                 id="basic-button"
                 aria-controls={open ? 'basic-menu' : undefined}
@@ -35,7 +30,6 @@ const MUIMenu = () => {
                 onClick={handleClick}
                 color="primary"
                 variant="contained"
-                className={classes.root}
             >
                 <MenuIcon/>Каталог
             </Button>

@@ -6,8 +6,8 @@ const HeaderLinks = (props) => {
 
     return (
         <div className={s.links}>
-            {props.linkList.map((el,i) => (
-                <div className={s.link}>{`${el} ${i+1}`}</div>
+            {props.linkList.map((el) => (
+                <a className={s.link}>{`${el}`}</a>
             ))}
         </div>
     );
