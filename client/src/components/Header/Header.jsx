@@ -37,17 +37,17 @@ const Header = () => {
                         </div>
                         <div className={s.button}>
                             <Button size="large">
-                                <div className={s.buttonName}><BarChartIcon/><div>Профиль</div></div>
+                                <div className={s.buttonName}><BarChartIcon/><div>Сравнение</div></div>
                             </Button>
                         </div>
                         <div className={s.button}>
                             <Button size="large">
-                                <div className={s.buttonName}><FavoriteBorderIcon/><div>Профиль</div></div>
+                                <div className={s.buttonName}><FavoriteBorderIcon/><div>Избранное</div></div>
                             </Button>
                         </div>
                         <div className={s.button}>
                             <Button size="large">
-                                <div className={s.buttonName}><ShoppingCartOutlinedIcon/><div>Профиль</div></div>
+                                <div className={s.buttonName}><ShoppingCartOutlinedIcon/><div>Корзина</div></div>
                             </Button>
                         </div>
                     </div>

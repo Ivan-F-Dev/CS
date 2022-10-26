@@ -1,12 +1,12 @@
 .Header {
-
+  display: flex;
+  justify-content: center;
   .mainContainer {
-
+    width: 95%;
     .topContainer {
       display: flex;
       align-items: center;
       height: 60px;
-
 
       .title_menuContainer {
         display: flex;
@@ -66,9 +66,16 @@
     }
 
     .bottomContainer {
-      border-top:1px solid gray;
+      //border-top:1px solid gray;
       display: flex;
       justify-content: center;
+    }
+    .bottomContainer::before {
+      position: absolute;
+      content: '';
+      background-color: gray;
+      height: 1px;
+      width: 100%;
     }
   }
 }
