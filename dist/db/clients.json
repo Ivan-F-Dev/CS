@@ -1,0 +1,18 @@
+[
+  {
+    "id": "1",
+    "name": "Ivan",
+    "surname": "Fomichev",
+    "dateOfBirth": "12122012",
+    "login": "",
+    "password": ""
+  },
+  {
+    "id": "2",
+    "name": "Maksim",
+    "surname": "Golovin",
+    "dateOfBirth": "12122012",
+    "login": "",
+    "password": ""
+  }
+]

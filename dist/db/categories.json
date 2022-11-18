@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Бытовая техника",
+    "img": "washingMachine",
+    "categoryName": "homeAppliances",
+    "prefix": "ha"
+  },
+  {
+    "title": "Игры и развлечения",
+    "img": "ps",
+    "categoryName": "games",
+    "prefix": "gm"
+  },
+  {
+    "title": "Телевизоры, аудио, видео",
+    "img": "tv",
+    "categoryName": "televisors",
+    "prefix": "tv"
+  },
+  {
+    "title": "Техника для кухни",
+    "img": "tech",
+    "categoryName": "kitchenAppliances",
+    "prefix": "ka"
+  },
+  {
+    "title": "Ноутбуки и компьютеры",
+    "img": "laptop",
+    "categoryName": "laptops",
+    "prefix": "lt"
+  },
+  {
+    "title": "Фото и видеотехника",
+    "img": "photo",
+    "categoryName": "photoVideo",
+    "prefix": "pv"
+  }
+]
